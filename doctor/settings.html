@@ -1,0 +1,41 @@
+<html>
+     <head>
+          <title>Settings</title>
+          <link rel="stylesheet" href="../General/styles/sidemenu.css">
+          <link rel="stylesheet" href="styles/settings.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+       
+     </head>
+     
+     <body class="body">
+		<div class="row">
+               <div class="col-lg-12">
+                    <h1 class="title">Settings</h1>
+               </div>
+               <div class="left account col-lg-6">
+                    <h3>My Account</h3>
+                    <p>E-Mail</p><input type="text" id="doctorEmail">
+                    <p>Password</p><input type="password" id="doctorPassword">
+                    <p>Phone Number</p><input type="text" id="doctorNumber"><button onclick="savedoctorNumber()">Save</button>
+               </div>
+        		<div class="right account col-lg-6">
+        		     <h3>Hospital</h3>
+                    <p>Locations</p><input type="text" id="doctorHospitals">
+                    <button>Add</button>
+                    <div class="doctorHospitalsList"> </div>
+                    <p>Availability</p><input type="date"  id="doctorAvailability">
+        		</div>
+               <p></p>
+               <div class="col-lg-12">
+                    <center><button onclick="save()" class="save">Save</button></center>
+               </div>
+          </div>
+        
+          
+          
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+          <script src="../General/scripts/sidemenu.js"></script>
+          <script src="scripts/settings.js"></script>
+     </body>
+</html>

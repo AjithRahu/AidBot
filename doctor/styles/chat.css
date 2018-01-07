@@ -1,0 +1,6 @@
+.sender {
+  height: 10px;
+  overflow-y: scroll;
+  background-color: blue;     
+}
+

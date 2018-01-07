@@ -1,0 +1,27 @@
+<html>
+     <head>
+          <link rel="stylesheet" href="../General/styles/sidemenu.css">
+          
+     </head>
+     
+     <body>
+		<!--HTML Skeleton-->
+          <h1>Settings</h1>
+          <div class="left account">
+               <h3>Hospital</h3>
+               <p>E-mail</p><input type="text" placeholder="hospital@email.com" id="hospitalEmail">
+               <p>Password</p><input type="password" id="hospitalPassword">
+               <p>Name</p><input type="text" id="hospitalName"><button onclick="savehospitalName()">Save</button>
+               <p>Address</p><input type="text" id="hospitalAddress"><button onclick="savehospitalAddress()">Save</button>
+               <p>Phone Number</p><input type="text" id="hospitalNumber"><button onclick="savehospitalNumber()">Save</button>
+          </div>
+          <button onclick="save()">Save</button>
+        
+          
+          
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+          <script src="../General/scripts/sidemenu.js"></script>
+          <script src="scripts/settings.js"></script>
+     </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>Calendar</title>
+          <link rel="stylesheet" href="../General/styles/sidemenu.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="styles/calendar.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> <!-- gets icon used for the "x" buttons, this requires an internet connection -->
+     </head>
+     <body>
+          <h1 id="title">Calendar</h1>
+
+          <div id="calendardiv">
+               <div id="calendarHead">
+                    <i class="fa fa-arrow-left" aria-hidden="true" id="left"></i>
+                    <i class="fa fa-arrow-right" aria-hidden="true" id="right"></i>
+                    <div id="monthyear"></div>
+               </div>
+               <table id="calendar"></table>
+          </div>
+          <div id="preview"></div>
+          <div id='dayView'>
+               <div id="time"></div>
+               <div id="daypreview"></div>
+          </div>
+          
+          <div id="modal">
+               <div id="details">
+                    <i id="close" class='fa fa-times fa-2x' aria-hidden='true' onclick="closeModal()"></i>
+                    <div id="appointment"></div><br>
+                    <div title="Add to Calendar" class="addeventatc">
+                        Add to Calendar
+                        <span class="start"></span>
+                        <span class="end"></span>
+                        <span class="title">Appointment</span>
+                        <span class="description"></span>
+                    </div>
+               </div>
+          </div>
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+          <script src="../General/scripts/sidemenu.js"></script>
+          <script src="scripts/calendar.js"></script>
+          <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+     </body>
+</html>

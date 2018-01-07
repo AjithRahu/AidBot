@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+ 
+     <head>
+          <title>Prescriptions</title>
+          <link rel="stylesheet" href="styles/prescription.css">
+          <link rel="stylesheet" href="../General/styles/sidemenu.css"/>
+     </head>
+     
+     
+     <body>      
+          
+          <h1 id="title">Prescriptions</h1>
+          
+          <div id="create">
+               
+               <button id="viewBut" class="view">View Previous Prescriptions</button>
+          
+               <h3>Assign Prescription:</h3>
+               
+               <p>Prescription Drug:</p>
+               <input type="text" id="prescriptionName"/>
+               
+               <p>Patient:</p>
+               <select id="prescriptionPatient">
+                    <option value="" selected disabled>Pick Patient</option>
+               </select>
+               
+               <p>Date Issued:</p>
+               <input type="date" id="prescriptionDate"/>
+               
+     
+               <p>Quantity:</p>
+               <input type="number" min="0" max="20" step="1" value="0" id="prescriptionQuantity">
+     
+               
+               <p>Refill:</p>
+               <input type="number" min="0" max="20" step="1" value="0" id="prescriptionRefill">
+               
+               
+               <br><br><button onclick="createPrescription()">Create Prescription</button>
+
+          </div>
+          
+          <div id="view">
+               
+               <button id="createBut" class="view">New Prescription</button><br><br>
+               
+               <div id="prescriptions"></div>
+               
+          </div>
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">  </script>
+          <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+          <script src="../General/scripts/sidemenu.js"></script>
+          <script src="scripts/prescription.js"></script>
+          
+     </body>
+     
+     
+</html>

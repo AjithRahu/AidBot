@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+ 
+     <head>
+          <title>Sign Up</title>
+          <link rel="stylesheet" href="styles/signup.css">
+      
+     </head>
+     
+     
+     <body>
+          
+     
+          
+          <h2 id="signup">Signup</h2></h2>
+          
+          <p>Select Account Type</p>
+          <select id="account" onchange="displayAccount()">
+               <option selected disabled>Select Account Type</option>
+               <option value="patient">Patient</option>
+               <option value="doctor">Doctor</option>
+               <option value="hospital">Hospital</option>
+          </select>
+          
+          <p id="selectpH">Select Your Hospital</p>
+          <select id="selectH" onchange="displayDoctor()"></select>
+          
+          <p id="selectpD">Select Your Doctor</p>
+          <select id="selectD"></select>
+          
+          <p id="addressp">Address:</p>
+          <input id="address" type="text" placeholder="Address">
+          
+          <p>Name:</p> 
+          <input  id="name" type="text" placeholder="Name">
+               
+          <p>E-Mail:</p> 
+          <input  id="e-mail" type="text" placeholder="E-Mail">
+          
+          <p>Password:</p> 
+          <input id="password" type="password" placeholder="Password">
+          
+          <p>Re-type Password:</p> 
+          <input id="password2" type="password" placeholder="Re-Type Password">
+          
+          <p id="birthdayp">Birthday:</p> 
+          <input id="birthday" type="date" max="2050-12-31">
+          
+          <p id="healthcardp">Health Card #:</p> 
+          <input id="healthcard" type="text" placeholder="Health Card #">
+          
+          <br><br><button type="button" onclick="signup()">Sign Up</button>
+     
+     
+          <br><br><a href="login.html">Already Have an Account?</a>
+     
+     
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+          <script src="scripts/signup.js"></script>
+     
+               
+     </body>
+     
+     
+</html>

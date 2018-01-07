@@ -1,0 +1,36 @@
+<html>
+     <head>
+          <link rel="stylesheet" href="../General/styles/sidemenu.css">
+       
+     </head>
+     
+     <body>	
+		<!--HTML Skeleton-->
+          <h1>Settings</h1>
+          <div class="left account">
+               <h3>My Account</h3>
+               <p>E-Mail</p><input type="text" placeholder="patient@email.com" id="patientEmail">
+               <p>Password</p><input type="password" placeholder="*********" id="patientPassword">
+               <p>Phone Number</p><input type="text" id="patientNumber"><button onclick="saveNumber()">Save</button>
+               <h3>Medical Information</h3>  
+               <p>Health Card Number</p><input type="text" id="patientHealth"><button onclick="saveHealth()">Save</button>
+               <p>Address</p><input type="text" id="patientAddress"><button onclick="saveAddress()">Save</button>
+               <p>Birthday</p><input type="date" id="patientBirthday"><button onclick="saveBirthday()">Save</button>
+               <h3>Emergency Contact Information</h3>          
+               <p>Primary Contact</p><input type="text" id="emergencyFirstname"><button onclick="saveemergencyFirstname()">Save</button>
+               <input type="text" id="emergencyLastname"><button onclick="saveemergencyLastname()">Save</button>
+               <input type="text" id="emergencyPhone1"><button onclick="saveemergencyPhone1()">Save</button>
+               <input type="text"id="emergencyAddress"><button onclick="saveemergencyAddress()">Save</button>
+           
+          </div>
+          
+          <button onclick="save()">Save</button> 
+        
+          
+          
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+          <script src="../General/scripts/sidemenu.js"></script>
+          <script src="scripts/settings.js"></script>
+     </body>
+</html>

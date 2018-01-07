@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+ 
+     <head>
+          <link rel="stylesheet" href="../General/styles/sidemenu.css">
+          <link rel="stylesheet" href="styles/settings.css">
+          <link rel="stylesheet" href="styles/login.css">
+          <link rel="stylesheet" href="styles/chat.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+     </head>
+     <body onload="contacts()">          
+          
+        
+          <div class="row">
+               <div class="col-md-12">
+                    <div>
+                         <h1>Contacts</h1>
+                         <select id="contacts">
+                              <option value="Patients" disabled selected>Contacts</option>
+                         </select>
+                         <button onclick="message()">Message</button>
+                    </div>
+               </div>
+               <div class="col-md-12" id="sender" style="overflow-y: scroll; height: 300px;">
+     
+               </div>
+
+               <div class="col-md-12" id="senders">
+     
+               </div>
+        
+          </div>
+
+          
+          <script src="../doctor/scripts/message.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">  </script>
+          <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+          <script src="scripts/login.js"></script>
+          <script src="../General/scripts/sidemenu.js"></script>
+          <script src="scripts/appointments.js"></script>
+         
+          
+     </body>
+     
+     
+</html>

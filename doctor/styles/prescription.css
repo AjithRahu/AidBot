@@ -1,0 +1,32 @@
+body {
+    background-color: #5e9cd3;
+    color: white;
+}
+
+a {
+     color: white;
+}
+
+button {
+     outline: none;
+     border: none;
+}
+
+.view {
+     background-color: white;
+     color: #5e9cd3;
+     font-size: 16px;
+     padding: 7px;
+     border-radius: 10px;
+}
+
+.view:hover {
+     cursor: pointer;
+     background-color: #5e9cd3;
+     color: white;
+     box-shadow: 0 0 0 2px white;
+}
+
+#view {
+     display: none;
+}

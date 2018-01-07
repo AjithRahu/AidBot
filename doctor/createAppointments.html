@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+ 
+     <head>
+          <title>Create Appointment</title>
+          <link rel="stylesheet" href="../General/styles/login.css">
+          <link rel="stylesheet" href="../General/styles/sidemenu.css"> 
+     </head>
+     
+     
+     <body onload="patients()">
+          
+          <h1 id="title">Aidbot</h1>
+          
+          <h2 id="login">Create Appointment</h2>
+          
+          <h3><b>Patient Name</b></h3>
+          <form>
+            <select id="patientslist">
+              <option value="Patients" disabled selected>Patients</option>
+            </select>
+          </form>
+          
+          <h3><b>Start Date/Time</b></h3>
+          <input type="date" placeholder="" id="patientDate">
+          <input type="time" placeholder="" id="patientTime">
+          
+          
+          <h3><b>End Date/Time</b></h3>
+          <input type="date" placeholder="" id="patientDateEnd">
+          <input type="time" placeholder="" id="patientTimeEnd">
+          
+          <h3><b>Notes</b></h3>
+          <input type="text" placeholder="Notes" id="patientNotes">
+          
+          
+          <h3><b>Equipment</b></h3>
+          <input type="text" placeholder="Equipment" id="patientEquipment">
+          
+          <button onclick="writeUserData()">Create</button>
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">  </script>
+          <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+          <script src="../General/scripts/sidemenu.js"></script>
+          <script src="scripts/appointmentsCreate.js"></script>
+
+          
+     </body>
+     
+     
+</html>
